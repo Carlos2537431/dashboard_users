@@ -2,11 +2,11 @@ import { faker, th } from "@faker-js/faker";
 import lodash from "lodash";
 import fs from 'fs';
 
-const peoples = lodash.times(50, function (n) {
+const peoples = lodash.times(600, function (n) {
     const firstName = faker.person.firstName();
     const lastName = faker.person.lastName();
     return {
-        id: n,
+        id: n+1,
         name: `${firstName} ${lastName}`,
         email: faker.internet.email(firstName, lastName),
         avatar: faker.image.avatar(),
@@ -17,8 +17,7 @@ const peoples = lodash.times(50, function (n) {
 const data = {};
 data.peoples = peoples;
 fs.writeFile('db.json', JSON.stringify(data), (err) => {
-    if (err) throw err;{
-        console.error(err);
+    if (err) throw err;
         console.log('Finalizado...');
-    }
+    
 });
