@@ -10,16 +10,18 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
-.user-card img 
-{
+
+.user-card img {
     border-radius: 50%;
     width: 100px;
     height: 100px;
     object-fit: cover;
 }
-.user-card h3 {
+
+.user-card h3 {   
     margin: 10px 0 5px;
-    font-size: 18px ;
+    font-size: 18px;
+    color: #333;
 }
 
 .user-card p,
