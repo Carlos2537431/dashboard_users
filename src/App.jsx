@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     fetch("http://localhost:3001/peoples")
       .then((res) => res.json())
-      .then((data) => setUsers(data.users))
+      .then((data) => setUsers(data))
       .catch((err) => console.error("Error ao  buscar usuarios:", err));
   }, []);
 
