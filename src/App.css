@@ -22,3 +22,36 @@ button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh; /* Garante que ocupe a altura total da tela */
+}
+.user-details img {
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user-container > div {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.user-container > div:hover {
+  transform: scale(1.05);
+}
+button {
+  padding: 10px 20px;
+  background-color: gray;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
