@@ -10,5 +10,6 @@ function UserCard({ user }) {
     </div>
   );
 }
+// UserCard é um componente que recebe um objeto de usuário e exibe suas informações em um cartão estilizado.
 
 export default UserCard;
